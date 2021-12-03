@@ -1,10 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 .btnCartCount {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border-radius: 15px;
+  /* transform: rotate(45deg); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.btnCartMenu {
   width: 50px;
   height: 50px;
   background: #000;
   color: #fff;
   border-radius: 15px;
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +25,7 @@
   top: 1.5rem;
   cursor: pointer;
   right: 1rem;
+  position: absolute;
 }
 
 .btnCartCount .count {
@@ -19,7 +33,7 @@
   background: red;
   top: -8px;
   left: -9px;
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -31,4 +45,36 @@
 }
 .btnCartCount i {
   transform: rotate(-45deg);
+}
+.box-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  border:1px solid gray;
+}
+.box-menu .item{
+  width: 200px;
+  height: 40px;
+  border:1px solid gray;
+  border-radius: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.box-menu .item a{
+  color:black;
+  font-weight: 500;
+}
+.box-menu .item:hover a,.box-menu .item:hover .ion-icon{
+  color:#fddb3a;
+ 
 }

@@ -4,8 +4,9 @@ import { createStructuredSelector } from 'reselect';
 import EmptyCart from '../../components/Cart/EmptyCart';
 import Footer from '../../components/common/Footer';
 import Logo from '../../components/common/Logo';
-import Menu from '../../components/common/Menu';
+import Carts from '../../components/common/Cart/Cart';
 import MenuItem from '../../components/common/Menu/MenuItem';
+
 import {
   selectCartItems,
   selectCartItemsCount,
@@ -25,9 +26,9 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
         <div className='orders'>
           <h1 className='orders-heading'>Your Orders</h1>
           <div className='orders-menu'>
-            <Menu list={cartList} />
+            <Carts list={cartList} />
           </div>
-          <h3 className='orders-total'>Your Total ${cartTotal}</h3>
+          <h3 className='orders-total'>Your Total {cartTotal} VNĐ</h3>
         </div>
       )}
       <Footer />

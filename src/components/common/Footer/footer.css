@@ -1,0 +1,52 @@
+
+.footer .boxt-container{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+  gap:1.5rem;
+  color: black;
+}
+
+.footer .boxt-container .boxt h3{
+  padding:.5rem 0;
+  font-size: 1.5rem;
+  color:var(--black);
+}
+
+.footer .boxt-container .boxt a{
+  display: block;
+  padding:.5rem 0;
+  font-size: 1rem;
+  color:var(--light-color);
+}
+
+.footer .boxt-container .boxt a:hover{
+  color:var(--green);
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  border-top: 1px solid ;
+  font-size: 1rem;
+  color:var(--black);
+  padding:.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.footer .credit span{
+  color: green;
+}
+*{
+  text-decoration: none;
+  outline: none; border:none;
+  
+  transition: all .2s linear;
+}
+section {
+  border-top: 1px solid;
+  margin-top: 3rem;
+  padding: 2rem 0 2rem 0;
+  
+}

@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 .item {
-  width: 150px;
+  width: 250px;
   padding: 0 0.8rem 0.8rem 0.8rem;
-  background-color: #fff;
-  border-radius: 30px;
+  background-color: rgb(245, 236, 236);
+  border-radius: 50px;
   text-align: center;
   flex-direction: column;
   display: flex;
@@ -10,7 +11,7 @@
 
 .item img {
   margin-top: -3.5rem;
-  height: 130px;
+  height: 200px;
   object-fit: contain;
 }
 .item-foot_desc {
@@ -21,6 +22,7 @@
 .item-head_desc p {
   margin: 0;
   margin-bottom: 0.5rem;
+ 
 }
 
 .item-foot_desc button {
@@ -37,16 +39,18 @@
   flex-direction: column;
 }
 
-.head_desc-name {
+.head_desc-name  {
   font-weight: 600;
-  font-size: 0.9rem;
-  text-transform: capitalize;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
   flex: 1;
 }
 .head_desc-info {
-  font-size: 0.8rem;
-  color: #a0a0a0;
+  font-size: 1rem;
+  color: #181414;
 }
 .foot_desc-price {
   font-weight: 700;
 }
+
